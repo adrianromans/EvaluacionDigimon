@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Biblioteca Digimon</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script src="https://kit.fontawesome.com/3846bb7b1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="menu">
+
+		<ul>
+			<li id="home"><img src="/assets/digivice.png" width="60px" height="40px" id=logo alt="Logo image" style="margin-left: 10px;" />
+				<a href="/index.html"></a></li>
+			<li style="float:right"><input type="text" id="digimon-search" placeholder="Busca Digimon por Nivel" level-search></li>
+			<li style="float:right"><input type="text" id="digimon-search" placeholder="Busca Digimon por Nombre" name-search></li>
+		</ul>
+	  </nav>
+	  
+	<div class="main-container" id="main-c">
+		<div class="digimon-container" id="digimon-c">
+
+			<h2>BIBLIOTECA DIGIMON</h2>
+			<br>
+
+			<div class="container-cards" id="cards-c" data-digimon-cards-container>
+				<template data-digimon-template>
+					<div class="card">
+						<img class="image" data-img>
+						<div class="header" data-header></div>
+						<div class="body" data-body></div>
+					</div>
+				</template>
+			</div>	
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/script.js"></script>
+	<footer>
+		<small><strong><i class="fa-brands fa-pied-piper"></i> Adrián Román S</small></strong>
+
+	</footer>
+	
+</body>
+</html>
